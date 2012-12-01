@@ -1,7 +1,5 @@
 module Pebbles
   module PhpCond
-    VERSION = '0.0.1'
-
     def self.bool(value)
       return false if value.nil? || value == false || value == 0 || value == 0.0
       return value != '' && value != '0' if value.is_a?(String)
