@@ -17,6 +17,7 @@ describe Pebbles::PhpCond do
     PhpCond::bool("abc").should be true
     PhpCond::bool("0abc").should be true
     PhpCond::bool("0.0").should be true
+    PhpCond::bool("0e0").should be true
     PhpCond::bool("01").should be true
   end
 
@@ -207,6 +208,8 @@ describe Pebbles::PhpCond do
     PhpCond::equal?([1], [2]).should be false
     PhpCond::equal?([3], [3]).should be true
 
+    PhpCond::equal?(0, '0e0').should be true
+    PhpCond::equal?(0, '0.0').should be true
   end
 
   it 'identical' do
