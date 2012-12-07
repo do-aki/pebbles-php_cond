@@ -1,3 +1,5 @@
+require 'pebbles-php_cond/version'
+
 module Pebbles
   module PhpCond
     def self.bool(value)
