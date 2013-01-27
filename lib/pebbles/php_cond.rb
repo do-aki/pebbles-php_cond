@@ -1,4 +1,4 @@
-require 'pebbles-php_cond/version'
+require 'pebbles/php_cond/version'
 
 module Pebbles
   module PhpCond

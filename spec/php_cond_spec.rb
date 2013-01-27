@@ -1,4 +1,4 @@
-require 'pebbles-php_cond'
+require 'pebbles/php_cond'
 include Pebbles
 
 describe Pebbles::PhpCond do
